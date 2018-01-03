@@ -1,0 +1,87 @@
+
+<div style="overflow: hidden" class="por">
+  <img src="images/down.png" alt="" class="recordDownL">
+  <div id="trigger1" class="select1">选择年份</div>
+  <div id="trigger2" class="select1 bl1" >选择月份</div>
+  <img src="images/down.png" alt="" class="recordDownR">
+</div>
+<!--<p class="mt10 tac searchBox" ng-click="searchRecord()">-->
+  <!--<img src="images/search.png" alt="" class="recordIcon">-->
+  <!--<span>搜索</span>-->
+<!--</p>-->
+<div ng-show="searchData">
+  <p class="recordNum">
+    <span class="fl ml10">订单数：{{num}}</span>
+    <span class="fr mr10">总额：<span class="colorBlue">￥{{sum / 100}}</span></span>
+  </p>
+
+  <div class="recordList">
+    <div class="recordBox" ng-repeat="a in orders">
+      <img ng-src="{{a.user.headImgUrl}}" alt="" class="recordPic">
+      <div class="recordDes">
+        <div class="recordLeft">
+          <p>{{a.user.nickname}}</p>
+          <p class="fs12 color128">{{a.finishTime | date : 'yyyy-MM-dd '}}完成</p>
+        </div>
+        <div class="recordRight">￥{{a.pay / 100}}</div>
+      </div>
+    </div>
+  </div>
+
+  <!--<table class="table table-hover">-->
+    <!--<tr>-->
+      <!--<th>编号</th>-->
+      <!--<th>用户头像</th>-->
+      <!--<th>预约时间</th>-->
+      <!--<th>金额</th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<tr ng-repeat="a in orders">-->
+      <!--<td>{{$index+1}}</td>-->
+      <!--<td><img ng-src="{{a.user.headImgUrl}}" alt="" style="width: 30px;height: 30px;"></td>-->
+      <!--<td>{{a.createTime | date : 'yyyy-MM-dd '}}</td>-->
+      <!--<td>{{a.pay / 100}}</td>-->
+    <!--</tr>-->
+  <!--</table>-->
+  <p ng-show="num == 0" class="tac mt10">没有查到相应的数据！！！</p>
+</div>
+
+
+<div class="weui_dialog_alert" style="display: none;">
+  <div class="weui_mask"></div>
+  <div class="weui_dialog">
+    <div class="weui_dialog_hd"> <strong class="weui_dialog_title">警告</strong>
+    </div>
+    <div class="weui_dialog_bd">弹窗内容，告知当前页面信息等</div>
+    <div class="weui_dialog_ft">
+      <a href="javascript:;" class="weui_btn_dialog colorWhite">确定</a>
+    </div>
+  </div>
+</div>
+
+<div class="weui_tabbar" style="position: fixed;">
+  <a href="javascript:;" class="weui_tabbar_item bgcTran "  ui-sref="myUser">
+    <div class="weui_tabbar_icon">
+      <img src="./images/myUser.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">我的推荐</p>
+  </a>
+  <a href="javascript:;" class="weui_tabbar_item bgcTran weui_bar_item_on" ui-sref="record">
+    <div class="weui_tabbar_icon">
+      <img src="./images/water-active.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">订单流水</p>
+  </a>
+  <a href="javascript:;" class="weui_tabbar_item bgcTran" ui-sref="me">
+    <div class="weui_tabbar_icon">
+      <img src="./images/user.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">我</p>
+  </a>
+</div>
+
+<div class="mask" ng-show="loading">
+  <div class="recordToast">
+    {{toast}}
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="qrcodeBox" ng-show="role == 1">
+  <p class="tac fs20">我的推荐码</p>
+  <img ng-src="{{scanCode}}" alt="" class="qrcodePic">
+  <p class="tac">
+    <button class="btn mt10 qrcodeBoxBtn" ng-click="toInvitationCard()">生成邀请卡</button>
+  </p>
+</div>
+<div class="meBox">
+  <div class="myname">
+    <!--<img src="images/me.png" alt="" class="mePic">-->
+    <img ng-src="{{imgUrl}}" alt="" class="mePic" onerror="this.src='images/me.png'">
+    <p class="mynameDes">
+      <span class="fl ml10">{{agency.realName}}</span>
+      <span class="fr mr10 uploadSpan" ng-click="toSubmitInvitationCard()">上传头像</span>
+    </p>
+  </div>
+  <div class="myRole">
+    <img src="images/me.png" alt="" class="meSmallPic ml10">
+    <span ng-show="role == 2" class="ml10">楼盘代理</span><span ng-show="role == 1" class="ml10">推广员</span>
+  </div>
+  <div class="myPhone">
+    <img src="images/phone.png" alt="" class="meSmallPic1">
+    <span class="ml10">{{agency.phone}}</span>
+  </div>
+  <div class="myLocation">
+    <img src="images/location.png" alt="" class="meSmallPic ml10">
+    <span class="ml10">{{agency.addr}}</span>
+  </div>
+</div>
+
+<!--<div class="loginOutBox">-->
+  <!--<button class="weui-btn" ng-click="loginOut()">退出登录</button>-->
+<!--</div>-->
+
+<!--<div class="ml10 mr10">-->
+  <!--<p class="mt10 bottom1 pb10">姓名：{{agency.realName}}</p>-->
+  <!--<p class="bottom1 pb10">角色：<span ng-show="role == 2">楼盘代理</span><span ng-show="role == 1">推广员</span></p>-->
+  <!--<p class="bottom1 pb10">手机号：{{agency.phone}}</p>-->
+  <!--<p class="bottom1 pb10">地址：{{agency.addr}}</p>-->
+  <!--<p class="bottom1 pb10" style="overflow: hidden" ng-click="toSubmitInvitationCard()">-->
+    <!--<span class="fl">上传头像</span>-->
+    <!--<img src="images/gt.png" alt="" class="meIcon">-->
+  <!--</p>-->
+  <!--<p class="bottom1 pb10" style="overflow: hidden" ng-click="toInvitationCard()">-->
+    <!--<span class="fl">我的邀请卡</span>-->
+    <!--<img src="images/gt.png" alt="" class="meIcon">-->
+  <!--</p>-->
+<!--</div>-->
+
+<!--<div class="qrcodeBox" ng-show="role == 1">-->
+  <!--<p class="tac fs20">我的推荐码</p>-->
+  <!--<img ng-src="https://www.quannengshifu.com/images/agency/{{id}}/wxmps.png" alt="" class="qrcodePic">-->
+<!--</div>-->
+
+<!--<div class="loginOutBox">-->
+  <!--<button class="weui-btn" ng-click="loginOut()">退出登录</button>-->
+<!--</div>-->
+
+<div class="weui_tabbar" style="position: fixed;">
+  <a href="javascript:;" class="weui_tabbar_item bgcTran "  ui-sref="myUser">
+    <div class="weui_tabbar_icon">
+      <img src="./images/myUser.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">我的推荐</p>
+  </a>
+  <a href="javascript:;" class="weui_tabbar_item bgcTran " ui-sref="record">
+    <div class="weui_tabbar_icon">
+      <img src="./images/water.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">订单流水</p>
+  </a>
+  <a href="javascript:;" class="weui_tabbar_item bgcTran weui_bar_item_on" ui-sref="me">
+    <div class="weui_tabbar_icon">
+      <img src="./images/user-actity.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">我</p>
+  </a>
+</div>

@@ -1,0 +1,242 @@
+.login-head{
+    background-color: #0087FE;
+    height: 200px;
+}
+
+.login-logo{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -75px;
+    width: 150px;
+    height: 100px;
+}
+
+.login-headDes{
+    padding-top: 120px;
+}
+
+.login-box{
+    width: 100%;
+    margin-top: 60px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.login-input{
+    width: 100%;
+}
+
+.bottom1{
+    border-bottom: 1px solid #ccc;
+}
+
+/*.qrcodeBox{*/
+    /*position: absolute;*/
+    /*top: 200px;*/
+    /*left: 50%;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*margin-left: -100px;*/
+/*}*/
+
+.qrcodeBox{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.loginOutBox{
+    /*margin-top: 20px;*/
+    /*margin-bottom: 75px;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+    margin: 20px 20px 75px 20px;
+}
+
+.loginOutBox button{
+    background-color: #0087FE;
+    line-height: 40px;
+}
+
+.qrcodePic{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+
+.meIcon{
+    float: right;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.select1{
+    float: left;
+    width: 50%;
+    height: 45px;
+    /*border-radius: 5px;*/
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 14px;
+    line-height: 45px;
+}
+
+.recordIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.searchBox{
+    color: #ffffff;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #1296db;
+}
+
+.invitationCardPic{
+    width: 200px;
+    height: 200px;
+}
+
+.myUserNum{
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #505050;
+    border-bottom:1px solid #ccc;
+}
+
+.userBox{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccc;
+}
+
+.userBoxPic{
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.userBox:last-child{
+    margin-bottom: 66px;
+}
+
+.recordNum{
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    margin: 0;
+    border-bottom:1px solid #ccc;
+}
+
+.recordBox{
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccc;
+    border-top:1px solid #ccc;
+    overflow: hidden;
+}
+
+.recordPic{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+}
+
+.recordDes{
+    margin-left: 52px;
+}
+
+.recordLeft{
+    float: left;
+    font-size: 14px;
+}
+
+.recordLeft p{
+    margin: 0;
+}
+
+.recordRight{
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.meBox{
+    border-bottom:1px solid #ccc;
+}
+
+.myname{
+    position: relative;
+    padding: 10px 0;
+    /*height: 50px;*/
+    overflow: hidden;
+    border-top:1px solid #ccc;
+}
+
+.mePic{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #eee;
+    position: absolute;
+}
+
+.mynameDes{
+    margin-left: 60px;
+    /*line-height: 50px;*/
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.uploadSpan{
+    padding:0 8px;
+    border: 1px solid #1296db;
+    color: #1296db;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.meSmallPic{
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+}
+
+.meSmallPic1{
+    margin-left: 13px;
+    width: 17px;
+    height: 17px;
+}
+
+.myPhone{
+    margin-top: 5px;
+}
+
+.myLocation{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.qrcodeBoxBtn{
+    background-color: #0087FE;
+    color: #fff;
+}
+
+.qrcodeBoxBtn:focus{
+    color: #fff;
+}

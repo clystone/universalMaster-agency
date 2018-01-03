@@ -1,0 +1,46 @@
+<p class="myUserNum">推荐人数：{{maxSize}}</p>
+<div class="userList" >
+  <div class="userBox" ng-repeat="a in user">
+    <img ng-src="{{a.headImgUrl}}" alt="" class="userBoxPic">
+    <span class="pl10">{{a.nickname}}</span>
+  </div>
+</div>
+<!--<div>-->
+  <!--<table class="table table-hover">-->
+    <!--<tr>-->
+      <!--<th>序号</th>-->
+      <!--<th>用户头像</th>-->
+      <!--<th>用户昵称</th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<tr ng-repeat="a in user">-->
+      <!--<td ng-bind="$index+1"></td>-->
+      <!--<td><img ng-src="{{a.headImgUrl}}" alt="" style="width: 30px;height: 30px;"></td>-->
+      <!--<td ng-bind="a.nickname"></td>-->
+    <!--</tr>-->
+  <!--</table>-->
+  <!--<p ng-show="maxSize == 0">暂时查不到相应的数据！！！</p>-->
+<!--</div>-->
+
+
+
+<div class="weui_tabbar" style="position: fixed;">
+  <a href="javascript:;" class="weui_tabbar_item bgcTran weui_bar_item_on"  ui-sref="myUser">
+    <div class="weui_tabbar_icon">
+      <img src="./images/myUser-actity.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">我的推荐</p>
+  </a>
+  <a href="javascript:;" class="weui_tabbar_item bgcTran " ui-sref="record">
+    <div class="weui_tabbar_icon">
+      <img src="./images/water.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">订单流水</p>
+  </a>
+  <a href="javascript:;" class="weui_tabbar_item bgcTran" ui-sref="me">
+    <div class="weui_tabbar_icon">
+      <img src="./images/user.png" alt="">
+    </div>
+    <p class="weui_tabbar_label mb0 mt0">我</p>
+  </a>
+</div>

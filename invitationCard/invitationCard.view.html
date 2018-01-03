@@ -1,0 +1,51 @@
+<!--上传邀请卡头像-->
+<div class="weui_cells weui_cells_form" style="margin-top: 0;">
+  <div class="weui_cell" style="padding-left:0;">
+    <div class="weui_cell_bd weui_cell_primary">
+      <div class="weui_uploader ml10">
+        <div class="weui_uploader_hd weui_cell">
+          <div class="weui_cell_bd weui_cell_primary">头像上传</div>
+          <div class="weui_cell_ft js_counter">0/1</div>
+        </div>
+        <div class="weui_uploader_bd">
+          <ul class="weui_uploader_files">
+            <!-- 预览图插入到这 --> </ul>
+          <div class="weui_uploader_input_wrp" >
+            <form name="form0" id="form0" >
+              <!--<input class="weui_uploader_input js_file int0" type="file" name="file"-->
+              <!--accept="image/jpg,image/jpeg,image/png,image/gif">-->
+              <input class="weui_uploader_input js_file int0" type="file" name="file">
+            </form>
+          </div>
+        </div>
+        <p class="dataBottomDes pt10">*请上传头像</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tac mt10" id="CardPicBox">
+  <h4 class="pt10">当前头像</h4>
+  <img ng-src="{{imgUrl}}" alt="" class="invitationCardPic" onerror="$('#CardPicBox').hide()">
+</div>
+
+<div class="ml20 mr20">
+  <a class="weui-btn mt10 qrcodeBoxBtn" ng-click="submitData()">提交头像</a>
+</div>
+
+
+<div class="weui_dialog_alert" style="display: none;">
+  <div class="weui_mask"></div>
+  <div class="weui_dialog">
+    <div class="weui_dialog_hd"><strong class="weui_dialog_title">警告</strong>
+    </div>
+    <div class="weui_dialog_bd">弹窗内容，告知当前页面信息等</div>
+    <div class="weui_dialog_ft">
+      <a href="javascript:;" class="weui_btn_dialog colorWhite">确定</a>
+    </div>
+  </div>
+</div>
+
+<div class="mask" ng-show="uploading">
+  <div class="recordToast">{{toast}}</div>
+</div>
